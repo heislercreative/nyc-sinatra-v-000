@@ -2,5 +2,5 @@
 
 <ul>
 <% @landmarks.sort_by{|a| a.name}.each do |landmark| %>
-  <li><%= landmark.name %></li>
+  <li><%= landmark.name %> - <em><%= landmark.year_completed %></em></li>
 <% end %>
