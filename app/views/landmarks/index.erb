@@ -1,0 +1,6 @@
+<h1>Landmarks</h1>
+
+<ul>
+<% @landmarks.sort_by{|a| a.name}.each do |landmark| %>
+  <li><%= landmark.name %></li>
+<% end %>
